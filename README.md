@@ -1,3 +1,19 @@
+# Archived — corpus consolidated
+
+This repository is retained as the historical Strict Layer archive.
+
+The active unified mathematical corpus is now:
+
+https://github.com/dongxuelian2/three-term-decimal-concatenation-square-sum
+
+Strict Layer material has been consolidated under the `research/strict/`
+portion of that repository.
+
+This repository is preserved for historical provenance and is no longer
+the active research corpus.
+
+---
+
 # Strict Layer Proof Research — Complete Archive
 
 这是“三项十进制拼接平方和问题”自开启 **Strict Layer / 严格层证明**以来的完整阶段性研究档案。
