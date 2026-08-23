@@ -1,38 +1,25 @@
-# Current Research Status
+# Canonical Corpus Status
 
-Last updated: 2026-08-13
+Generated corpus navigation and provenance metadata.
 
-## Global status
+## Current mathematical boundary
 
-The original three-term decimal concatenation square-sum problem remains open. The current corpus contains rigorous foundational reductions, several closed templates or subbranches, and substantial unresolved residual systems. No complete solution or global impossibility proof is recorded.
+- GLOBAL_PROBLEM=OPEN
+- STRICT_A1=OPEN
+- 105_CONTINUATION=OPEN
 
-## Proven / closed
+The global v3 authority layout is `reports/global/proved_results_index_v3.md` and `reports/global/proved_results_report_v3.md`. Critical and strict source layers remain separately navigable, while `SOURCE_EQUIVALENCE_MANIFEST.tsv` records equivalent v3 source bodies without assigning source-authority order.
 
-- T1–T18: foundational integerization, denominator, valuation, digit-layer, critical-layer, and strict-layer reductions; see [`proved_results_report_v3.md`](reports/proved_results_report_v3.md).
-- O1: the entire critical `O` template has no candidate, with project-internal exact machine-assisted certificates; external independent rerun remains pending.
-- GA1-1: `G_prim`, `gamma=1`, `A1` is closed.
-- GE2-1: the exceptional binary `A2` room is closed.
-- GC3-1: primitive `gamma=1`, `C3` is closed.
+## Consolidation facts
 
-## Reduced but still open
+- Source-backed physical rows: 350
+- Exact-text alias sources recorded: 36
+- Global v3 index physical copies: 1
+- Global v3 report physical copies: 1
+- Strict initial exact-duplicate physical copies: 1
+- 105 metadata/obligation files excluded: 3
+- `LEGACY_REMOTE_BROKEN_REFERENCE_REPAIRED_BY_MIGRATION`: present in generated navigation
+- `SOURCE_FILE_MUTATION_PERFORMED=NO`
+- `SOURCE_GIT_MUTATION_PERFORMED=NO`
 
-- `A2`, low `phi`: GALMB-3 gives a uniform finite-block/involution and unique finite exponent-segment structure; the moving-modulus and discrete-log residue remains.
-- `A2`, high `phi`, `Fprimary-minus`: the `P0`, `P1`, and zero-quotient families are unified into an inverse–Bezout tower; the ratio-length forbidden-word obstruction remains.
-- `C1` and `C2` rooms in the primitive `gamma=1` `C` system remain open.
-- The critical `Q` system remains at its moving-coefficient reduction.
-- All four strict-layer families still contain open infinite branches.
-
-## Current frontier
-
-- [`critical_G_A2_high_phi_Fprimary_minus_P0_frontier_research_20260813.md`](docs/frontiers/critical_G_A2_high_phi_Fprimary_minus_P0_frontier_research_20260813.md) records the latest high-`phi` `P0` narrowing: at most three candidate `F` values and at most six `(F,J)` pairs for fixed legal `(a,t)`, but the branch is still open.
-- [`c2_negative_frontier_20260811.md`](docs/frontiers/c2_negative_frontier_20260811.md) records a clean mathematical extraction from a later C2 checkpoint: the `L+` orientation is closed and the exact `L-` residual remains. This has not replaced the v3 theorem registry.
-
-## Recently completed
-
-- 2026-08-13 — Narrowed the open high-`phi` `G/A2/Fprimary-minus/P0` branch without changing its open status.
-- 2026-08-11 — Recorded the C2 `L+` closure and the remaining `L-` frontier as a clean research note; the original mixed run report is intentionally excluded.
-- 2026-08-07 — Current global v3 report froze O1, GA1-1, GE2-1, GALMB-3, and GC3-1 in its stated project-internal proof categories.
-
-## Scope notes
-
-The v3 report remains the global theorem/status authority. Finite computations are kept at their stated evidence level and are not promoted to proofs. No Agent source, prompt, harness, quota record, credential, or run trace belongs in this repository.
+This file records corpus navigation and provenance metadata; source-backed mathematical documents remain authoritative within their own scopes.

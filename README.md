@@ -1,73 +1,30 @@
-# Three-Term Decimal Concatenation Square-Sum Problem
+# Canonical Mathematical Corpus
 
-This repository records an ongoing mathematical proof project about whether there exist positive integers
-\[
-a_1,a_2,a_3,b_1,b_2,b_3
-\]
-with \(\gcd(a_i,b_i)=1\) for each \(i\), satisfying
-\[
-\left(\frac{a_1}{b_1}\right)^2+
-\left(\frac{a_2}{b_2}\right)^2+
-\left(\frac{a_3}{b_3}\right)^2
-=
-\left(
-\frac{\operatorname{concat}(a_1,a_2,a_3)}
-{\operatorname{concat}(b_1,b_2,b_3)}
-\right)^2,
-\]
-where `concat` denotes ordinary decimal concatenation without leading zeroes.
+Generated corpus navigation and provenance metadata for the unified mathematical corpus.
 
-The repository is a proof corpus and research index. It does not contain the Agent, harness, prompt, or run-history material used during the research.
+## Canonical navigation
 
-## Current status
+- Global v3 index: [reports/global/proved_results_index_v3.md](reports/global/proved_results_index_v3.md)
+- Global v3 report: [reports/global/proved_results_report_v3.md](reports/global/proved_results_report_v3.md)
+- Critical source frontier: [research/critical/frontiers/critical_G_A2_high_phi_Fprimary_minus_P0_frontier_research_20260813.md](research/critical/frontiers/critical_G_A2_high_phi_Fprimary_minus_P0_frontier_research_20260813.md)
+- Strict source status: [reports/strict/current_research_status_v3.md](reports/strict/current_research_status_v3.md)
+- Strict current foundation document: [research/strict/foundation/strict_layer_unified_exact_lift_campaign.md](research/strict/foundation/strict_layer_unified_exact_lift_campaign.md)
+- Strict 105 continuation report: [research/strict/campaigns/105/local/105_V3_CONTINUATION_REPORT.md](research/strict/campaigns/105/local/105_V3_CONTINUATION_REPORT.md)
+- Source equivalence: [manifests/SOURCE_EQUIVALENCE_MANIFEST.tsv](manifests/SOURCE_EQUIVALENCE_MANIFEST.tsv)
+- Public migration manifest: [manifests/MIGRATION_MANIFEST.tsv](manifests/MIGRATION_MANIFEST.tsv)
 
-The global status is still open: no complete solution has been found, and the original problem has not been proved impossible.
+## Mathematical boundary
 
-The global authority is [`reports/proved_results_report_v3.md`](reports/proved_results_report_v3.md), with the shorter theorem registry at [`reports/proved_results_index_v3.md`](reports/proved_results_index_v3.md). The v3 record establishes T1–T18 and several branch results, including:
+- GLOBAL_PROBLEM=OPEN
+- STRICT_A1=OPEN
+- 105_CONTINUATION=OPEN
 
-- the entire critical `O` template is closed by O1, as a project-internal exact machine-assisted theorem;
-- `G_prim`, `gamma=1`, `A1` is closed by GA1-1;
-- the exceptional binary `A2` room is closed by GE2-1;
-- the low-`phi` `A2` region is reduced by GALMB-3 to a finite-state/block structure, but its moving-modulus residue remains open;
-- the primitive `gamma=1`, `C3` branch is closed by GC3-1;
-- `G` has substantial remaining open branches, `Q` remains open, and all four strict-layer families remain open.
+Critical and strict source scopes remain distinct. Closed sub-results and bounded searches stay scope-qualified; no corpus navigation promotes them to global closure.
 
-The 2026-08-13 [`P0 frontier report`](docs/frontiers/critical_G_A2_high_phi_Fprimary_minus_P0_frontier_research_20260813.md) narrows, but does not close, the high-`phi` `G/A2/Fprimary-minus` `j=0` branch. The [`C2 frontier note`](docs/frontiers/c2_negative_frontier_20260811.md) records a later project-internal checkpoint that closes the `L+` orientation while leaving the `L-` residual open; it is a frontier note, not a replacement for the v3 global registry.
+The two source-repository copies of each v3 proved-results document have one canonical global physical target under `reports/global`. This is provenance consolidation, not a ranking of critical over strict or strict over critical.
 
-## Repository map
+## Provenance and safety
 
-- [`reports/`](reports/) — global theorem report and quick index; start here.
-- [`docs/foundations/`](docs/foundations/) — global layer and foundational campaign documents.
-- [`docs/G/`](docs/G/) — `G`-template reductions and branch-specific campaigns.
-- [`docs/lemmas/`](docs/lemmas/) — extracted mathematical lemma documents and terminal closure statements.
-- [`docs/frontiers/`](docs/frontiers/) — current open-frontier notes and clean summaries of later partial progress.
-- [`NOTATION.md`](NOTATION.md) — stable notation gathered from the current corpus.
-- [`STATUS.md`](STATUS.md) — concise update dashboard.
-- [`docs/dependencies.md`](docs/dependencies.md) — high-level dependency map.
+Source-backed files are copied byte-for-byte. Canonical hashes normalize only CRLF/CR line endings to LF for equivalence checks. The exact-text aliases, the global v3 source pair, and the strict initial historical pair are recorded in `SOURCE_EQUIVALENCE_MANIFEST.tsv`.
 
-## Recommended reading order
-
-1. [`proved_results_index_v3.md`](reports/proved_results_index_v3.md)
-2. [`proved_results_report_v3.md`](reports/proved_results_report_v3.md), especially the problem definition, T1–T18, status sections, and dependency table
-3. [`NOTATION.md`](NOTATION.md)
-4. foundational/global reductions in [`docs/foundations/`](docs/foundations/)
-5. the common `G` reductions: scale divisor → primitive core/remainder → content dichotomy → terminal quotient
-6. the relevant `G` branch campaign, followed by its linked lemma documents
-7. the current frontier notes in [`docs/frontiers/`](docs/frontiers/)
-
-## Status semantics
-
-- **proved / closed** — a complete proof or a stated project-internal exact certificate is supplied in the linked document; machine-assisted closure is not presented as third-party reproduction.
-- **reduced / classified** — a rigorous structural reduction or classification is established, but the remaining residual is not closed.
-- **finite observation** — a bounded computation or experiment; it is not a global proof.
-- **open** — no complete proof or counterexample is recorded.
-- **frozen** — a result or status is treated as the current versioned baseline.
-- **superseded / withdrawn** — retained only for history when a later document replaces or corrects its scope.
-
-## Updating the corpus
-
-For a substantive mathematical milestone, update the proof document first, then the theorem index, [`STATUS.md`](STATUS.md), and the global report if needed. See [`PROOF_UPDATE_WORKFLOW.md`](PROOF_UPDATE_WORKFLOW.md).
-
-## Disclaimer
-
-This repository contains an ongoing mathematical proof project. Results marked as proved or closed are intended to have complete proofs in the linked documents; other branches may remain provisional or open. The repository does not claim that the original problem has been solved.
+The source README/STATUS reference to the locally present but remote-missing critical P0 frontier is represented by the corpus frontier target and the token `LEGACY_REMOTE_BROKEN_REFERENCE_REPAIRED_BY_MIGRATION`. This repairs corpus navigation only; it does not alter either source repository.
