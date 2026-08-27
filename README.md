@@ -1,30 +1,66 @@
-# Canonical Mathematical Corpus
+# Three-Term Decimal Concatenation Square-Sum Problem
 
-Generated corpus navigation and provenance metadata for the unified mathematical corpus.
+This is the canonical repository for the project. It is a proof corpus, not the
+Research Agent, its runtime, or its run history.
 
-## Canonical navigation
+## Problem
 
-- Global v3 index: [reports/global/proved_results_index_v3.md](reports/global/proved_results_index_v3.md)
-- Global v3 report: [reports/global/proved_results_report_v3.md](reports/global/proved_results_report_v3.md)
-- Critical source frontier: [research/critical/frontiers/critical_G_A2_high_phi_Fprimary_minus_P0_frontier_research_20260813.md](research/critical/frontiers/critical_G_A2_high_phi_Fprimary_minus_P0_frontier_research_20260813.md)
-- Strict source status: [reports/strict/current_research_status_v3.md](reports/strict/current_research_status_v3.md)
-- Strict current foundation document: [research/strict/foundation/strict_layer_unified_exact_lift_campaign.md](research/strict/foundation/strict_layer_unified_exact_lift_campaign.md)
-- Strict 105 continuation report: [research/strict/campaigns/105/local/105_V3_CONTINUATION_REPORT.md](research/strict/campaigns/105/local/105_V3_CONTINUATION_REPORT.md)
-- Source equivalence: [manifests/SOURCE_EQUIVALENCE_MANIFEST.tsv](manifests/SOURCE_EQUIVALENCE_MANIFEST.tsv)
-- Public migration manifest: [manifests/MIGRATION_MANIFEST.tsv](manifests/MIGRATION_MANIFEST.tsv)
+For positive integers `a_i,b_i` with `gcd(a_i,b_i)=1`, let `concat` be ordinary
+decimal concatenation without leading zeroes. The question is whether
 
-## Mathematical boundary
+\[
+\sum_{i=1}^{3}\left(\frac{a_i}{b_i}\right)^2
+=
+\left(\frac{\operatorname{concat}(a_1,a_2,a_3)}
+{\operatorname{concat}(b_1,b_2,b_3)}\right)^2
+\]
 
-- GLOBAL_PROBLEM=OPEN
-- STRICT_A1=OPEN
-- 105_CONTINUATION=OPEN
+can hold. The global problem remains open. The theorem record is
+[`research/foundations/results/theorem-index.md`](research/foundations/results/theorem-index.md),
+and the detailed report is
+[`research/foundations/results/proved-results.md`](research/foundations/results/proved-results.md).
 
-Critical and strict source scopes remain distinct. Closed sub-results and bounded searches stay scope-qualified; no corpus navigation promotes them to global closure.
+## Canonical research tree
 
-The two source-repository copies of each v3 proved-results document have one canonical global physical target under `reports/global`. This is provenance consolidation, not a ranking of critical over strict or strict over critical.
+Directory hierarchy expresses mathematical containment; filenames express local
+mathematical meaning. Proof maturity and historical workflow are metadata, not
+parallel mathematical trees.
 
-## Provenance and safety
+- [`research/foundations/`](research/foundations/) — definitions, theorem records, and foundational reductions.
+- [`research/exact-lift/`](research/exact-lift/) — the common exact-lift and recovery framework.
+- [`research/denominator-structure/`](research/denominator-structure/) — denominator and DD reductions.
+- [`research/a1/`](research/a1/) — the A1 branch, with forward, backward, J2, and moving-profile subproblems.
+- [`research/templates/g/`](research/templates/g/) — the critical G-template branches and their lemmas.
+- [`TREE.md`](TREE.md) and [`INDEX.md`](INDEX.md) — deterministic navigation generated from this tree.
 
-Source-backed files are copied byte-for-byte. Canonical hashes normalize only CRLF/CR line endings to LF for equivalence checks. The exact-text aliases, the global v3 source pair, and the strict initial historical pair are recorded in `SOURCE_EQUIVALENCE_MANIFEST.tsv`.
+Results, reusable failures, incomplete attempts, computations, and literature
+audits belong near the node they concern. A failure is scope-qualified negative
+knowledge about a route; it is not automatically a proof that the original
+problem has no solution.
 
-The source README/STATUS reference to the locally present but remote-missing critical P0 frontier is represented by the corpus frontier target and the token `LEGACY_REMOTE_BROKEN_REFERENCE_REPAIRED_BY_MIGRATION`. This repairs corpus navigation only; it does not alter either source repository.
+## Historical names and provenance
+
+Campaign, round, strict-layer, and numbered-series names are historical aliases,
+not active canonical names. The source-only material is preserved byte-for-byte
+under [`research/archive/strict-layer-proof-research/`](research/archive/strict-layer-proof-research/).
+That directory is an intentionally frozen archival boundary; its old names are
+kept so that provenance remains recoverable. The migration map, source commits,
+hashes, relationships, and aliases live under [`provenance/`](provenance/).
+Git retains the complete source commit graph, including the imported source
+history and the `legacy-strict-layer-final` tag.
+
+## Updating the corpus
+
+For a new mathematical result, update the closest canonical node, then update
+the theorem/status record and links. Keep local notation scoped to its defining
+document; see [`NOTATION.md`](NOTATION.md) and
+[`PROOF_UPDATE_WORKFLOW.md`](PROOF_UPDATE_WORKFLOW.md).
+
+Regenerate navigation with:
+
+```text
+python tools/update-research-index.py
+```
+
+The generator is deterministic and uses no database, embedding service, or
+agent runtime.

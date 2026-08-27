@@ -42,3 +42,8 @@ critical_G_A2_high_phi_Fprimary_minus_P0_frontier_research_20260813.md
 Thumbs.db
 .vscode/
 .idea/
+
+# The historical source mirror is intentionally byte-preserving, including
+# tracked logs and frozen ZIP bundles that the active corpus does not generate.
+!research/archive/
+!research/archive/**

@@ -1,6 +1,6 @@
 # Notation
 
-This file records notation already stable in the current proof corpus. It is a navigation aid, not a redesign of the mathematical system. Local campaign notation may have a narrower scope; the defining document takes precedence.
+This file records notation already stable in the current proof corpus. It is a navigation aid, not a redesign of the mathematical system. Local record notation may have a narrower scope; the defining document takes precedence.
 
 ## Original problem and concatenation
 
@@ -18,7 +18,7 @@ This file records notation already stable in the current proof corpus. It is a n
 - `G = gcd(A,B)`.
 - `H = gcd(B,L)`, `B = H M`, `L = H N_L`, with `gcd(M,N_L)=1`.
 
-## Critical layer
+## Critical-template notation
 
 - `n = beta_2`, `T = 10^n`, `S = 10^(beta_3)`.
 - `a = a_1`, `b = b_1`, `F = aT + 10a_2`, `D = bT + b_2`.
@@ -28,9 +28,9 @@ This file records notation already stable in the current proof corpus. It is a n
 ## G-template notation
 
 - `G_prim` denotes the primitive/core layer in the `G` template.
-- `gamma` is the content/scale parameter used by the `G` campaigns; `gamma=1` is a major frozen scope.
+- `gamma` is the content/scale parameter used by the `G` branch records; `gamma=1` is a major frozen scope.
 - `A1`, `A2`, `B`, `C1`, `C2`, `C3`, and `C5` are branch labels whose exact scope is defined by the linked campaign documents.
-- `phi` (often written `\varphi`) is the five-adic depth parameter in the `A2` campaigns.
+- `phi` (often written `\varphi`) is the five-adic depth parameter in the `A2` branch records.
 - `F_+`, `F_{P-}`, and `F_{E-}` are high-`phi` subfamilies; `P0` and `P1` are positive-quotient families.
 
 ## Valuations and arithmetic
@@ -42,4 +42,4 @@ This file records notation already stable in the current proof corpus. It is a n
 
 ## Scope warning
 
-Some historical campaign documents use local symbols such as `m`, `M`, `R`, `q`, `r`, `k`, or `h` differently from the global report. Do not force a global identification across documents; use the local definitions and the dependency links.
+Some historical documents use local symbols such as `m`, `M`, `R`, `q`, `r`, `k`, or `h` differently from the global report. Do not force a global identification across documents; use the local definitions and the dependency links.

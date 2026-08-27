@@ -1,25 +1,24 @@
-# Canonical Corpus Status
+# Research status
 
-Generated corpus navigation and provenance metadata.
+The global problem is still open: the corpus contains neither a complete
+solution nor a proof of impossibility.
 
-## Current mathematical boundary
+## Current boundary
 
-- GLOBAL_PROBLEM=OPEN
-- STRICT_A1=OPEN
-- 105_CONTINUATION=OPEN
+- The foundational theorem record is [`research/foundations/results/theorem-index.md`](research/foundations/results/theorem-index.md).
+- The exact-lift/recovery framework is partial and remains an open route; see [`research/exact-lift/status.md`](research/exact-lift/status.md).
+- The critical O template is recorded as closed within its stated evidence level; G and Q retain open branches under [`research/templates/g/`](research/templates/g/).
+- The A1 and moving-profile branches remain open; current state records are under [`research/a1/`](research/a1/).
 
-The global v3 authority layout is `reports/global/proved_results_index_v3.md` and `reports/global/proved_results_report_v3.md`. Critical and strict source layers remain separately navigable, while `SOURCE_EQUIVALENCE_MANIFEST.tsv` records equivalent v3 source bodies without assigning source-authority order.
+Closed sub-results, bounded computations, failed routes, and open frontiers remain
+scope-qualified. They must not be promoted to a global conclusion.
 
-## Consolidation facts
+## Evidence language
 
-- Source-backed physical rows: 350
-- Exact-text alias sources recorded: 36
-- Global v3 index physical copies: 1
-- Global v3 report physical copies: 1
-- Strict initial exact-duplicate physical copies: 1
-- 105 metadata/obligation files excluded: 3
-- `LEGACY_REMOTE_BROKEN_REFERENCE_REPAIRED_BY_MIGRATION`: present in generated navigation
-- `SOURCE_FILE_MUTATION_PERFORMED=NO`
-- `SOURCE_GIT_MUTATION_PERFORMED=NO`
+The corpus distinguishes pure proof, exact machine-assisted proof, finite
+observation, open attempt, and reusable negative knowledge. The migration itself
+does not alter mathematical claims or upgrade evidence levels.
 
-This file records corpus navigation and provenance metadata; source-backed mathematical documents remain authoritative within their own scopes.
+Migration accounting and historical aliases are maintained in
+[`provenance/MIGRATION_MAP.tsv`](provenance/MIGRATION_MAP.tsv) and
+[`provenance/ALIASES.tsv`](provenance/ALIASES.tsv).
