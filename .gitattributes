@@ -1,0 +1,6 @@
+# Keep deterministic navigation artifacts byte-stable across checkout platforms.
+.gitattributes text eol=lf
+/TREE.md text eol=lf
+/INDEX.md text eol=lf
+/provenance/*.tsv text eol=lf
+/tools/update-research-index.py text eol=lf
